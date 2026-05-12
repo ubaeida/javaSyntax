@@ -56,6 +56,7 @@ public class Main {
 
         //Exercise 2
         System.out.println("Methods " + multiplies(a, b));
+
         //Exercise 4
         //Find the largest number in an array.
         int[] nums = {3,7,2,9,1};
@@ -75,5 +76,4 @@ public class Main {
     static int multiplies(int a, int b) {
         return a * b;
     }
-
 }
