@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello Backend + AI World!");
@@ -42,11 +45,21 @@ public class Main {
 
         //Arrays
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("Numbers array " + Arrays.toString(numbers));
         for (int num : numbers) {
             System.out.println(num);
         }
+        System.out.println("numbers[0]= "  + numbers[0]);
+        System.out.println("numbers.length= " +numbers.length);
 
-        //Exercise 2
+        // Creating an ArrayList
+        ArrayList<Integer> list = new ArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        System.out.println("ArrayList " + list);
+
+        //Exercise 1
         //Find even numbers from 1 to 50.
         for (int i = 0; i <= 50;i++) {
             if (i  % 2 == 0) {
