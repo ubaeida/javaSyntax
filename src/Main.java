@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,6 +60,23 @@ public class Main {
         list.add(2);
         list.add(3);
         System.out.println("ArrayList " + list);
+
+        //HashMsp
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("Ubaeida", 30);
+        hashMap.put("Alkayal", 45);
+        hashMap.put("Alaa", 20);
+        System.out.println("HashMap " + hashMap);
+        for(Map.Entry<String , Integer> entry : hashMap.entrySet()) {
+            System.out.println("Entry " + entry);
+            System.out.println("Key " +entry.getKey());
+            System.out.println("Value " +entry.getValue());
+        }
+        System.out.println("Hash Map Contains Ubaeida? " + hashMap.containsKey("Ubaeida"));
+        System.out.println("Hash Map Contains 20? " + hashMap.containsValue(20));
+        System.out.println("Hash Map Contains 25? " + hashMap.containsValue(25));
+        hashMap.remove("Alaa");
+        System.out.println("HashMap " + hashMap);
 
         //Exercise 1
         //Find even numbers from 1 to 50.
