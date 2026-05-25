@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -97,6 +94,22 @@ public class Main {
             if (num > largestNum) {largestNum = num;}
         }
         System.out.println("Largest Number " +largestNum);
+
+        // Exception Handling in java
+        // try with resources
+        try(Scanner input = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
+            System.out.println(input.nextInt() /0);
+        }catch(InputMismatchException e) {
+            System.out.println("That is not a valid number.");
+        }catch (ArithmeticException e) {
+            System.out.println("You cannot divide by zero!.");
+        }catch (Exception e) {
+            //Safety net
+            System.out.println("Something went wrong");
+        }finally {
+            System.out.println("This always excited");;
+        }
     }
 
     //Methods
