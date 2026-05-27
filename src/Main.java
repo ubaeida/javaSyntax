@@ -85,6 +85,9 @@ public class Main {
 
         //Exercise 2
         System.out.println("Methods " + multiplies(a, b));
+        //Compile-Time Polymorphism Exercise
+        System.out.println("Compile-Time Polymorphism " + add(5,6));
+        System.out.println("Compile-Time Polymorphism " + add(5,6,8));
 
         //Exercise 4
         //Find the largest number in an array.
@@ -116,9 +119,15 @@ public class Main {
     static int add(int a, int b) {
         return a + b;
     }
+
+    //Compile-Time Polymorphism
+    static int add(int a, int b, int c) {
+        return a + b + c;
+    }
     //Exercise 2
     //Create a method that multiplies two numbers.
     static int multiplies(int a, int b) {
         return a * b;
     }
+
 }
